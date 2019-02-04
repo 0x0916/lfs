@@ -82,6 +82,7 @@ localedef -i zh_CN -f GB18030 zh_CN.GB18030
 
 make localedata/install-locales
 
+# Configuring Glibc
 cat > /etc/nsswitch.conf << "EOF"
 # Begin /etc/nsswitch.conf
 
@@ -117,6 +118,8 @@ zic -d $ZONEINFO -p America/New_York
 unset ZONEINFO
 
 tzselect
+
+cp -v /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
 cat > /etc/ld.so.conf << "EOF"
 # Begin /etc/ld.so.conf
