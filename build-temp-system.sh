@@ -6,11 +6,13 @@ SCRIPTS_PATH="01-constructing-temporary-system"
 
 for script in `ls $SCRIPTS_PATH`
 do
-	echo ">>>>>>>>  RUN $script START"	
+	start_time=`date +"%Y-%m-%d %H:%M:%S"`
+	echo ">>>>>>>> $start_time  RUN $script START"
 	chmod +x $SCRIPTS_PATH/$script
 	$SCRIPTS_PATH/$script
 	if [ $? -ne 0 ]; then
 		exit 0
 	fi
-	echo ">>>>>>>>  RUN $script END"	
+	end_time=`date +"%Y-%m-%d %H:%M:%S"`
+	echo ">>>>>>>> $end_time  RUN $script END"
 done
