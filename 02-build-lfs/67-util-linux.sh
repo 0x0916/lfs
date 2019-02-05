@@ -1,7 +1,6 @@
 #!/bin/sh
 
 set -e
-exit 0
 
 NAME=util-linux-2.32.1
 TAR=tar.xz
@@ -31,8 +30,8 @@ rm -vf /usr/include/{blkid,libmount,uuid}
 
 make -j100
 
-chown -Rv nobody .
-su nobody -s /bin/bash -c "PATH=$PATH make -k check"
+#chown -Rv nobody .
+#su nobody -s /bin/bash -c "PATH=$PATH make -k check"
 
 
 make install

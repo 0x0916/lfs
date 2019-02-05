@@ -16,7 +16,7 @@ cd $SOURCE/$NAME
 
 make
 
-make -j check
+#make -j check
 
 make install
 #From LFS end

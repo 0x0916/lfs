@@ -35,15 +35,13 @@ SED=sed                               \
 
 make -j100
 
-ulimit -s 32768
-
-
-rm ../gcc/testsuite/g++.dg/pr83239.C
-
-chown -Rv nobody . 
-su nobody -s /bin/bash -c "PATH=$PATH make -k check"
-
-../contrib/test_summary
+# RUN TEST
+#ulimit -s 32768
+#rm ../gcc/testsuite/g++.dg/pr83239.C
+#chown -Rv nobody . 
+#su nobody -s /bin/bash -c "PATH=$PATH make -j100 -k check"
+#
+#../contrib/test_summary
 
 make install
 

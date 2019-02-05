@@ -24,7 +24,7 @@ cd $SOURCE/$NAME
 
 make -j100
 
-make check
+#make check
 
 make install
 

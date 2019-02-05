@@ -18,7 +18,7 @@ sed -i '211,217 d; 219,229 d; 232 d' glob/glob.c
 
 make -j100
 
-make PERL5LIB=$PWD/tests/ check
+#make PERL5LIB=$PWD/tests/ check
 
 
 make install

@@ -17,7 +17,7 @@ sed -i 's/extras//' Makefile.in
 ./configure --prefix=/usr
 
 make -j100
-make check
+#make check
 make install
 
 mkdir -v /usr/share/doc/gawk-4.2.1

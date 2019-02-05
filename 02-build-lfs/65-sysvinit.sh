@@ -1,7 +1,6 @@
 #!/bin/sh
 
 set -e
-exit 0
 
 NAME=sysvinit-2.90
 TAR=tar.xz

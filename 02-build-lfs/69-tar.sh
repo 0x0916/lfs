@@ -1,7 +1,6 @@
 #!/bin/sh
 
 set -e
-exit 0
 
 NAME=tar-1.30
 TAR=tar.xz
@@ -19,7 +18,7 @@ FORCE_UNSAFE_CONFIGURE=1  \
 
 make -j100
 
-make check
+#make check
 
 make install
 

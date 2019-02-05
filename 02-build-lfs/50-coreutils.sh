@@ -35,8 +35,8 @@ echo "dummy:x:1000:nobody" >> /etc/group
 chown -Rv nobody . 
 
 
-su nobody -s /bin/bash \
-          -c "PATH=$PATH make RUN_EXPENSIVE_TESTS=yes check"
+#su nobody -s /bin/bash \
+#          -c "PATH=$PATH make RUN_EXPENSIVE_TESTS=yes check"
 
 sed -i '/dummy/d' /etc/group
 
@@ -44,7 +44,7 @@ make install
 
 
 mv -v /usr/bin/{cat,chgrp,chmod,chown,cp,date,dd,df,echo} /bin
-mv -v /usr/bin/{false,ln,ls,mkdir,mknod,mv,pwd,rm} /bin
+mv -v /usr/bin/{false,ln,ls,mkdir,mknod,pwd,rm} /bin
 mv -v /usr/bin/{rmdir,stty,sync,true,uname} /bin
 mv -v /usr/bin/chroot /usr/sbin
 mv -v /usr/share/man/man1/chroot.1 /usr/share/man/man8/chroot.8

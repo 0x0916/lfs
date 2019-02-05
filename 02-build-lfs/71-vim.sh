@@ -19,7 +19,7 @@ echo '#define SYS_VIMRC_FILE "/etc/vimrc"' >> src/feature.h
 
 make -j100
 
-LANG=en_US.UTF-8 make -j1 test &> vim-test.log
+#LANG=en_US.UTF-8 make -j1 test &> vim-test.log
 
 make install
 

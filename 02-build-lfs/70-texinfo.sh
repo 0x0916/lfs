@@ -19,7 +19,7 @@ sed -i '5481,5485 s/({/(\\{/' tp/Texinfo/Parser.pm
 
 make -j100
 
-make check
+#make check
 
 make install
 

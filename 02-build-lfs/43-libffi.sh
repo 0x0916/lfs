@@ -25,7 +25,7 @@ sed -e '/^includedir/ s/=.*$/=@includedir@/' \
 
 make -j100
 
-make check
+#make check
 
 make install
 

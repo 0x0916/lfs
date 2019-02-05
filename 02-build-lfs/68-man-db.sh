@@ -23,7 +23,7 @@ cd $SOURCE/$NAME
             --with-systemdtmpfilesdir=
 make -j100
 
-make check
+#make check
 
 make install
 #From LFS end

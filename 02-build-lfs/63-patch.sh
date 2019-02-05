@@ -16,7 +16,7 @@ cd $SOURCE/$NAME
 ./configure --prefix=/usr
 
 make -j100
-make check
+#make check
 
 make install
 #From LFS end

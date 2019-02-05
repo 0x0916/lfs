@@ -19,7 +19,7 @@ echo "#define _IO_IN_BACKUP 0x100" >> lib/stdio-impl.h
 
 make -j100
 
-make check
+#make check
 
 make install
 

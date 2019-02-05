@@ -25,7 +25,7 @@ sed -e '/AppData/{N;N;p;s/\.appdata\./.metainfo./}' \
 
 make -j100
 
-make check
+#make check
 
 make install
 chmod -v 0755 /usr/lib/preloadable_libintl.so

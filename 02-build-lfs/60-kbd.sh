@@ -22,7 +22,7 @@ PKG_CONFIG_PATH=/tools/lib/pkgconfig ./configure --prefix=/usr --disable-vlock
 
 make -j100
 
-make check
+#make check
 
 make install
 
