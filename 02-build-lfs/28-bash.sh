@@ -19,15 +19,15 @@ cd $SOURCE/$NAME
 
 make -j100
 
-chown -Rv nobody .
+#chown -Rv nobody .
 
-su nobody -s /bin/bash -c "PATH=$PATH make tests"
+#su nobody -s /bin/bash -c "PATH=$PATH make tests"
 
 
 make install
 mv -vf /usr/bin/bash /bin
 
-exec /bin/bash --login +h
+#exec /bin/bash --login +h
 
 
 #From LFS end
