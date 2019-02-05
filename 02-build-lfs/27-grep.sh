@@ -16,7 +16,7 @@ cd $SOURCE/$NAME
 
 make -j100
 
-make -k check
+#make -k check
 
 make install
 #From LFS end

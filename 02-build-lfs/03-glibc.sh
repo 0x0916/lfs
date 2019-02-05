@@ -45,7 +45,7 @@ unset GCC_INCDIR
 
 make -j100
 
-make -j100 check
+#make -j100 check
 
 touch /etc/ld.so.conf
 
@@ -117,7 +117,7 @@ cp -v zone.tab zone1970.tab iso3166.tab $ZONEINFO
 zic -d $ZONEINFO -p America/New_York
 unset ZONEINFO
 
-tzselect
+#tzselect
 
 cp -v /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
